@@ -375,6 +375,7 @@ def render_maps(model_key: str, grid: np.ndarray, lats, lons):
     fig, ax = plt.subplots(figsize=(12, 6), dpi=150)
     ax.imshow(
         hard_show,
+        # hard=1 means land; gray maps 1 to white and 0 to black.
         cmap="gray",
         vmin=0,
         vmax=1,
